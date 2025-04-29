@@ -8,7 +8,7 @@ def computer_guesses_number():
         guess = (low + high) // 2
         attempts += 1
         print(f"My guess is: {guess}")
-        feedback = input("Is it (H)igh, (L)ow, or (C)orrect? ").strip().lower()
+        feedback = input("Is it (h)igh, (l)ow, or (c)orrect? ").strip().lower()
 
         if feedback == 'h':
             high = guess - 1
@@ -18,6 +18,7 @@ def computer_guesses_number():
             print(f"🎉 Yay! I guessed your number in {attempts} attempts.")
             break
         else:
+            # print
             print("Please enter H, L, or C.")
 
 computer_guesses_number()
